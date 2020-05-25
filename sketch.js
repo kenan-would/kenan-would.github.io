@@ -35,7 +35,7 @@ var g3;
 
 function setup() {
   createCanvas(1000, 280);
-  data = loadJSON('data-20200427.json', loadedJSON);
+  data = loadJSON('data-20200511.json', loadedJSON);
   textAlign(LEFT);
   background(200);
   chartHeight = document.getElementById("graphdiv2").offsetHeight + 20;
