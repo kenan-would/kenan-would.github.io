@@ -46,13 +46,12 @@ function setup() {
   dataSelect.option("Riversand's 07th May");
   dataSelect.option("Riversand's 11th May");
   dataSelect.option("Riversand's 13th May");
-    dataSelect.changed(siteSelectEvent);
+  dataSelect.changed(siteSelectEvent);
   dataSelect = document.getElementById("eltDataSelect");
   fill(0);
-textSize(16);
-textFont('Helvetica');
-text('Channels:', 360, 25)
-  
+  textSize(16);
+  textFont('Helvetica');
+  text('Channels:', 360, 25)
 }
 // Get channels and create checck boxes
 function siteSelectEvent() {
@@ -65,10 +64,10 @@ console.log(i)
   case 1:
     data = loadJSON('data-20200507.json', loadedJSON);
     break;
-      case 1:
+      case 2:
     data = loadJSON('data-20200511.json', loadedJSON);
     break;
-      case 1:
+      case 3:
     data = loadJSON('data-20200513.json', loadedJSON);
     break;
   default:
